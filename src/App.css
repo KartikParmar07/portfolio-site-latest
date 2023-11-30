@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Righteous&family=Syne&display=swap');
+
+:root{
+  --color-primary: rgb(90,212,142);
+  --color-secondary: rgb(68,215,229);
+  --color-black: #101113;
+  --color-white: #fff;
+  --color-tertiary: #1E1E1E;
+  /* 40px */
+  --size-h1:2.5em; 
+  
+  --size-h2:4.1em;
+  --size-t1:1.1em;
+  --size-t2:1.25em;
+  --size-t3:1.5em;
+  --size-t4:2.25em;
+  --style-2:"Righteous";
+  --padding: 0 20vw;
+  --border:1px solid white;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--color-black) !important;
+  color: var(--color-white);
+  font-family: 'Syne', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-size: var(--size-h1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  font-size: var(--size-h2);
+}
+
+h3{
+  font-size: var(--size-t4);
+}
+
+p{
+  font-size: var(--size-t1);
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+.App{
+  
 }
